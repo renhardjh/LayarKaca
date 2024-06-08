@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Layar Kaca</string>
+    <string name="tv_show">TV Show</string>
+    <string name="movies">Movies</string>
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
+    <string name="release_date">Release Date</string>
+    <string name="icon_star">Icon Star</string>
+    <string name="rating_value">Rating Value</string>
+    <string name="image_detail">Image Detail</string>
+    <string name="description">Description</string>
+    <string name="splashscreen">Layar\nKaca</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="groups">Groups</string>
+    <string name="about_us">About Us</string>
+    <string name="team_member">Team Member:</string>
+</resources>

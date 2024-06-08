@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_rating"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/outline_star_white_24"
+            android:contentDescription="@string/icon_star"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorRating"/>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRating"
+            android:textSize="14sp"
+            android:text="@string/rating_value"
+            android:textStyle="bold"
+            android:layout_marginStart="3dp"
+            app:layout_constraintStart_toEndOf="@id/iv_rating"
+            app:layout_constraintTop_toTopOf="@id/iv_rating"
+            app:layout_constraintBottom_toBottomOf="@id/iv_rating"/>
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="@color/colorTextDark"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_rating"
+            app:layout_constraintBottom_toBottomOf="@id/iv_rating"
+            android:text="@string/release_date" />
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="@color/colorTextDark"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/iv_rating"
+            app:layout_constraintTop_toBottomOf="@+id/iv_rating"
+            android:text="@string/genre" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_genre"
+            app:layout_constraintTop_toBottomOf="@+id/tv_genre"
+            android:text="@string/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
